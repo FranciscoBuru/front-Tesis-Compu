@@ -7,7 +7,7 @@ import NFTCard from '../components/NFTCard';
 
 const settings = {
   apiKey: process.env.REACT_APP_ALCHEMY, // Replace with your Alchemy API Key.
-  network: process.env.REACT_APP_CHAINID, // Replace with your network.
+  network: process.env.REACT_APP_ALCHEMY_NETWORK, // Replace with your network.
 };
 
 function Auction() {
@@ -27,7 +27,6 @@ function Auction() {
         const nftsForOwner = await alchemy.nft.getNftsForOwner(account);
         for (const nft of nftsForOwner.ownedNfts) {
           if(nft.tokenType === "ERC721"){
-            console.log(nft)
             tok = [...tok, nft]
           }
         }

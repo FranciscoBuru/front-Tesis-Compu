@@ -10,7 +10,7 @@ function CreateAuction() {
 
   const settings = {
       apiKey: process.env.REACT_APP_ALCHEMY, // Replace with your Alchemy API Key.
-      network: process.env.REACT_APP_CHAINID, // Replace with your network.
+      network: process.env.REACT_APP_ALCHEMY_NETWORK, // Replace with your network.
   };
   //console.log(Network.ETH_GOERLI)
   const alchemy = new Alchemy(settings);
