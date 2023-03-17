@@ -10,9 +10,9 @@ const useCreateAuction = (tokenAddress, tokenID) => {
     // address
     // abi
     // chainId
-    const [auctionAddress, setAuctionAddress] = useState("0xcaF59bb98010fdd1Bba1c479b5Cc6DACf377eF4E")
+    const [auctionAddress, setAuctionAddress] = useState(process.env.REACT_APP_FACTORY_ADDRESS)
     const ABI = AuctionFactory.abi
-    const factoryAddress = "0xcaF59bb98010fdd1Bba1c479b5Cc6DACf377eF4E"
+    const factoryAddress = process.env.REACT_APP_FACTORY_ADDRESS
     const factoryInterface = new utils.Interface(ABI)
     const factoryContract = new Contract(factoryAddress, factoryInterface)
     const nftABI = IERC721.abi
