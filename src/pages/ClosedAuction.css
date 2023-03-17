@@ -1,0 +1,65 @@
+.home{
+    padding: 50px;
+    padding-left: 60px;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.center{
+}
+
+.nft{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    display:inline-block
+    
+}
+
+.fields{
+    font-size: 50px !important;
+    display:inline-block;
+    width: 50%;
+    position: relative;
+    float: right;
+    padding-top: 5px;
+}
+
+label{
+    display: inline-block;
+    float: right;
+    width: 100%;
+}
+
+input{
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid gray;
+    padding:10px 10px 0px 10px;
+    margin: 5%;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    
+}
+
+.mint-text{
+    width: 80%;
+}
+
+.fields button{
+    margin-top: 80px;
+    position: relative;
+    left: 25%;
+    
+}
+
+input:focus {
+    outline: none;
+  }
+
+  input[type=datetime-local] {
+    outline: none;
+    font-size: 30px;
+  }

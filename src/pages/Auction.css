@@ -1,0 +1,13 @@
+.auc{
+    padding: 50px;
+    padding-left: 60px;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
